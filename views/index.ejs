@@ -2,12 +2,12 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/style-messages.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <a href="/new">Submit a new message</a>
+    <h1 class="pageTitle title"><%= title %></h1>
+    <p class="secondaryTitle title">Welcome to <%= title %></p>
+    <a class="submit formEntry" href="/new">Submit a new message</a>
     <ul>
         <% if (messages.length > 0) {%>
           <% messages.forEach(messages =>{%>

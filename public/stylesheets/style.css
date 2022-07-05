@@ -1,8 +1,80 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* background-color: #121314; */
+  background: #06113c;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+li {
+  list-style: none;
+}
+.title {
+  display: block;
+  font-family: sans-serif;
+  margin: 10px auto 5px;
+  width: 300px;
+  text-align: center;
+}
+.pageTitle {
+  font-size: 2em;
+  color: rgb(255, 140, 50);
+  font-weight: bold;
+}
+.secondaryTitle {
+  color: grey;
+}
+/* box shadow  rojo rgba(240,80,53) azul rgb(123,219,248) verde #d6ea2e;*/
+.app {
+  background: #ffffff;
+  box-shadow: 22px 22px 44px #020718, -22px -22px 44px #0a1b60;
+  border-radius: 5px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border-top: 5px solid rgb(255, 140, 50);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.button {
+  color: white;
+  background: rgb(255, 140, 50);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #adadad, -5px -5px 10px #ffffff;
+  text-decoration: none;
+  text-align: center;
+  margin: 20px;
+  display: block;
+  padding: 10px;
+  max-width: fit-content;
+  align-self: center;
+  justify-self: center;
+}
+.button:hover{
+  background: rgb(254, 161, 90)
+}
+.message-wrapper {
+  border-top: none;
+}
+.message-card {
+  border-radius: 5px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: inset 5px 5px 10px #adadad, inset -5px -5px 10px #ffffff;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  position: relative;
 }

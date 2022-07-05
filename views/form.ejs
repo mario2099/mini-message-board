@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <form method="POST" action="/new">
-        <label for="messageUser">Full name:</label>
-        <input type="text" id="messageUser" name="messageUser"><br><br>
-        <label for="messageText">Message:</label>
-        <input type="text" id="messageText" name="messageText"><br><br>
-        <input type="submit" value="Submit">
-    </form>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/stylesheets/style-form.css">
+
+</head>
+
+<body>
+   <div class="wrapper">
+      <form class="form" method="POST" action="/new">
+        <div class="pageTitle title">Create New Message </div>
+        <div class="secondaryTitle title">Please fill this form to post a new message.</div>
+        <input type="text" class="name formEntry" placeholder="Name" name="messageUser"/>
+        <textarea class="message formEntry" placeholder="Message" name="messageText"></textarea>
+        <input class="submit formEntry" type="submit" value="Submit">
+      </form>
+    </div>
+</body>
+
 </html>

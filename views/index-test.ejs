@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1 class="pageTitle title"><%= title %></h1>
+      <p class="secondaryTitle title">Welcome to <%= title %></p>
+      <a class="button" href="/new">Submit a new message</a>
+      <div class="message-wrapper">
+        <% if (messages.length > 0) {%> 
+            <% messages.forEach(messages =>{%>
+                <div class="message-card">
+                <li><%=messages.user%></li>
+                <li><%=messages.text%></li>
+                <li><%=messages.added%></li>
+                </div>
+
+        <% })} %>
+      </div>
+    </div>
+  </body>
+</html>
